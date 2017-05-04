@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void increment (View view) {
+        int quantity = 3 ;
+        display (quantity);
+    }
 
     public void submitOrder (View view) {
-        int numberOfCoffe = 2;
-        int harga =  numberOfCoffe * 5;
-        int gelas = numberOfCoffe * 2;
-        int gTotal = gelas + harga;
-        display (harga);
-        displayPrice(gTotal);
+        display ((77*2)+1);
+        displayPrice ((77*2)+1);
     }
 
     private void display(int i) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayPrice(int j) {
         TextView displayTextView = (TextView) findViewById(R.id.price_text_view);
         displayTextView.setText(NumberFormat.getCurrencyInstance().format(j));
+
     }
 
 }
