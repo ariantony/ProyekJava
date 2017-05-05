@@ -33,5 +33,5 @@ public class MainActivity extends AppCompatActivity {
         displayTextView.setText(NumberFormat.getCurrencyInstance().format(j));
 
     }
+    private void dispay1(int k) = (TextView) findViewById(R.id.quantity_text_view)};
 
-}
